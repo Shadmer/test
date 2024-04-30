@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HashRouter  } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL)
+
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter
+      // basename={process.env.PUBLIC_URL}
+      hashType={'noslash'}
+    >
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
 
