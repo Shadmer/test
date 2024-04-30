@@ -8,6 +8,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL)
+console.log('1')
+console.log('2')
 
 root.render(
   <React.StrictMode>
